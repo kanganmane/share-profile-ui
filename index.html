@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kangan Mane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="wrapper">
+            <img src="assets/kangan1.jpg" alt="">
+            <div class="username">Kangan Mane</div>
+            <div class="college">Student, RIT</div>
+            <div class="btns">
+                <button onclick="openshare()" class="sharebtn bott"><i class="fa-solid fa-share"></i> Share My Profile</button>
+                <button class="followbtn bott">Follow Me</button>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="upper">
+                <h1>Share My Profile</h1>
+                <i onclick="closeshare()" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="below">
+                <h3>Share This Via</h3>
+                <div class="icons">
+                    <a href="https://linkedin.com/in/kanganmane" class="icon" id="linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/kanganmane" class="icon" id="github" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/kanganmane16" class="icon" id="instagram" target="_blank">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/917620471223" class="icon" id="whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:kanganmane16@gmail.com" class="icon" id="email" target="_blank">
+                        <i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" onclick="closeshare()"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

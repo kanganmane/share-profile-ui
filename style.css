@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Outfit';
+}
+
+.cover{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-color: black;
+}
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px red;
+    background: linear-gradient(-25deg, red, rgb(239, 127, 127));
+    animation: circle1Animate 15s infinite;
+}
+  
+@keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 1.11;
+    }
+}
+
+.circle2{
+    position: fixed;
+    bottom: 5%;
+    right: 25%;
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(-30deg,purple,rgb(243, 180, 243));
+    border-radius: 50%;
+    box-shadow: 0 0 50px purple;
+    animation: circle2Animate 15s infinite;
+}
+
+@keyframes circle2Animate {
+    50%{
+        right: 27%;
+        bottom: 4%;
+        scale: 1.1;
+    }
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 450px;
+    border: 2px solid #ffffff30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px 50px;
+}
+
+img{
+    border: 2px solid #ffffff30;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.username {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+.college{
+    text-align: center;
+    color: #ffffff85;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.sharebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    text-transform: capitalize;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.followbtn{
+    text-transform: capitalize;
+    width: 150px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.bott:hover{
+    background: #ffffffb9;
+    color: #131313;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    scale: 0;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+
+.upper {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+}
+
+.upper i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.icon {
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+
+.icon i {
+    font-size: 27px;
+}
+
+#linkedin {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+}
+#linkedin:hover {
+    background-color: #1771e6;
+    color: #fff;
+}
+  
+#github {
+    color: #141414;
+    border: 1px solid #141414;
+}
+#github:hover {
+    background-color: #141414;
+    color: #fff;
+}
+  
+#instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+}
+#instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+}
+  
+#whatsapp {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+}
+#whatsapp:hover {
+    background-color: #2fe664;
+    color: #fff;
+}
+  
+#email {
+    color: rgb(250, 204, 3);
+    border: 1px solid rgb(250, 204, 3);
+}
+#email:hover {
+    background-color: rgb(250, 204, 3);
+    color: #fff;
+}
+
+.active {
+    scale: 1;
+}
+.overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+
+@media (max-width: 850px) {
+    .wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .btns {
+      flex-direction: column;
+    }
+    .modal {
+      width: 70vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .cover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .wrapper img {
+      width: 120px;
+      height: 120px;
+    }
+    .username {
+      font-size: 1.3rem;
+    }
+    .modal {
+      width: 80vw;
+    }
+}
