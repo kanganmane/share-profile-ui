@@ -13,8 +13,8 @@ A simple profile sharing UI made using HTML, CSS, and JavaScript.
 ---
 ## 📸 Screenshot
 
-![Screenshot1](screenshot1.png)
-![Screenshot2](screenshot2.png)
+![Screenshot1](assets/screenshot1.png)
+![Screenshot2](assets/screenshot2.png)
 
 ## ▶️ How to Run
 
